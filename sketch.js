@@ -12,6 +12,14 @@ createCanvas(windowWidth/2+200,windowHeight);
 engine=Engine.create();
 world=engine.world;
 
+  let canvasmouse= Mouse.create(canvas.elt);
+  canvasmouse.pixelRatio = pixelDensity():
+  let options = {
+  mouse:canvasmouse
+  };
+  mConstraint = MouseConstraint.create(engine,options);
+  World.add(world,mConstraint);
+  
 ground=new Ground(450,200,400,20,"brown");
 
 pendulum1 = new Pendulum(340, 450, "blue");
