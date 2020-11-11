@@ -14,7 +14,7 @@ engine=Engine.create();
 world=engine.world;
 
   let canvasmouse= Mouse.create(canvas.elt);
-  canvasmouse.pixelRatio = pixelDensity():
+  canvasmouse.pixelRatio = pixelDensity();
   let options = {
   mouse:canvasmouse
   };
